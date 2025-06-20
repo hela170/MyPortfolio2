@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "deploy": "npm run export && touch out/.nojekyll && gh-pages -d out -t true",
+    "dev": "next dev",
     "export": "next build && next export",
-    "deploy": "npm run export && touch out/.nojekyll && gh-pages -d out -t true"
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

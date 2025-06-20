@@ -8,10 +8,10 @@ export default function Navigation() {
   const pathname = usePathname()
 
   const navItems = [
-    { href: "/", label: "./home", command: "cd ~", color: "hover:text-blue-400" },
-    { href: "/about", label: "./about", command: "cat about.md", color: "hover:text-purple-400" },
-    { href: "/projects", label: "./projects", command: "ls projects/", color: "hover:text-green-400" },
-    { href: "/skills", label: "./skills", command: "cat skills.json", color: "hover:text-pink-400" },
+    { href: "/", label: "./accueil", command: "cd ~", color: "hover:text-blue-400" },
+    { href: "/about", label: "./à-propos", command: "cat about.md", color: "hover:text-purple-400" },
+    { href: "/projects", label: "./projets", command: "ls projects/", color: "hover:text-green-400" },
+    { href: "/skills", label: "./compétences", command: "cat skills.json", color: "hover:text-pink-400" },
     { href: "/cv", label: "./cv", command: "cat cv.pdf", color: "hover:text-orange-400" },
     { href: "/contact", label: "./contact", command: "./contact.sh", color: "hover:text-cyan-400" },
   ]
